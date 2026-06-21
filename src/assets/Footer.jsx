@@ -1,5 +1,8 @@
 import React from "react";
 import { FiEdit } from "react-icons/fi";
+import { CiTwitter } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { SlSocialLinkedin } from "react-icons/sl";
 function Footer() {
   return (
     <footer className="w-full bg-white pt-16 pb-8 border-t border-gray-100 font-sans">
@@ -39,25 +42,13 @@ function Footer() {
             <h4 className="text-[#0F172A] font-bold text-lg">Connect</h4>
             <div className="flex items-center gap-4">
               <a href="#" className="hover:opacity-80 transition-opacity">
-                <img
-                  src="/icons/twitter.svg"
-                  alt="Twitter"
-                  className="w-5 h-5 opacity-60"
-                />
+                <CiTwitter />
               </a>
               <a href="#" className="hover:opacity-80 transition-opacity">
-                <img
-                  src="/icons/github.svg"
-                  alt="GitHub"
-                  className="w-5 h-5 opacity-60"
-                />
+                <FaGithub />
               </a>
               <a href="#" className="hover:opacity-80 transition-opacity">
-                <img
-                  src="/icons/linkedin.svg"
-                  alt="LinkedIn"
-                  className="w-5 h-5 opacity-60"
-                />
+                <SlSocialLinkedin />
               </a>
             </div>
           </div>
