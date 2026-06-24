@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import hero from "../assets/hero.svg";
 function Hero() {
   return (
-    <section className="bg-[#F5F4FF] h-[585px] flex items-center">
+    <section className="bg-[#F5F4FF] h-[585px] flex items-center mt-18">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="mx-auto">
