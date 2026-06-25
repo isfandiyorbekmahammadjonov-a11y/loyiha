@@ -2,7 +2,7 @@ import React from "react";
 
 function PostTop() {
   return (
-    <section className="bg-[#F5F4FF] py-24">
+    <section className="bg-[#F5F4FF] py-24 px-10">
       <h1 className="text-center font-extrabold text-6xl leading-16">
         Explore Our Posts
       </h1>

@@ -3,7 +3,7 @@ import CardsMap from "./CardsMap";
 function PostsBottom() {
   return (
     <section className="py-16">
-      <div className="flex justify-center">
+      <div className="sm:flex justify-center hidden ">
         <div className="flex items-center gap-1 p-1 bg-gray-100 rounded-xl">
           <button className="px-8 py-2 text-sm font-medium bg-white rounded-lg shadow-sm text-gray-900">
             All

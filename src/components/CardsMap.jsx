@@ -9,7 +9,7 @@ function CardsMap() {
         return (
           <div
             key={item.id}
-            className="max-w-[360px] mx-auto bg-white border border-gray-100 rounded-[24px] shadow-sm overflow-hidden font-sans"
+            className="max-w-[360px] mx-auto bg-white border border-gray-100 rounded-[24px] shadow-sm overflow-hidden font-sans mb-10"
           >
             <div className="relative h-[200px] w-full">
               <img
