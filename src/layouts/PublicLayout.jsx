@@ -7,7 +7,7 @@ function Layout() {
       <header>
         <Navbar />
       </header>
-      <main>
+      <main className="mt-18">
         <Outlet />
       </main>
       <Footer />
