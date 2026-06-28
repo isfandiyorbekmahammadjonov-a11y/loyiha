@@ -22,7 +22,7 @@ function LoginForm() {
       });
       const data = await response.json();
       if (data?.success) {
-        navigate("/");
+        navigate("/adminLayout");
       }
     } catch (error) {
       console.log(error);
