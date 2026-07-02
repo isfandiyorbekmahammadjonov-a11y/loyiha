@@ -8,6 +8,9 @@ import AdminLayout from "./layouts/AdminLayout";
 import AdminDashboard from "./components/AdminDashboard";
 import AdminPosts from "./components/AdminPosts";
 import AdminCreatePost from "./components/AdminCreatePost";
+import ProtectedRoute from "./components/ProtectedRoute";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   const router = createBrowserRouter([
     {
@@ -30,7 +33,11 @@ function App() {
     },
     {
       path: "/adminLayout",
-      element: <AdminLayout />,
+      element: (
+        <ProtectedRoute>
+          <AdminLayout />
+        </ProtectedRoute>
+      ),
       children: [
         {
           index: true,
@@ -47,7 +54,12 @@ function App() {
       ],
     },
   ]);
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+      <ToastContainer />
+    </>
+  );
 }
 
 export default App;

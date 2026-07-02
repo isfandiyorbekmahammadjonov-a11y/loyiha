@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useRef } from "react";
 const apiUrl = import.meta.env.VITE_API_URL;
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 function LoginForm() {
   let navigate = useNavigate();
   let emailRef = useRef();
@@ -21,11 +22,12 @@ function LoginForm() {
         }),
       });
       const data = await response.json();
-      if (data?.success) {
-        navigate("/adminLayout");
-      }
+      console.log(data);
+      localStorage.setItem("access", data.data.access);
+      localStorage.setItem("refresh", data.data.refresh);
+      navigate("/adminLayout");
     } catch (error) {
-      console.log(error);
+      toast.error("Login xato!");
     }
   }
   return (
