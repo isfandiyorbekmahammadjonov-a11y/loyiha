@@ -10,9 +10,6 @@ function AdminLeft() {
           <h1 className="text-[24px] font-bold text-[#5B5CEB]">Blogify</h1>
           <p className="text-[13px] text-gray-400">Admin Panel</p>
         </div>
-
-
-
         <div className="px-3 pt-5 space-y-1">
           <Link
             to="."
