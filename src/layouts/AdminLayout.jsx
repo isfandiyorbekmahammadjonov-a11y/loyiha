@@ -1,17 +1,15 @@
-import { Outlet, Link } from "react-router-dom";
+import React from "react";
+import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import AdminLeft from "../components/AdminLeft";
 function AdminLayout() {
   return (
-    <>
-      <div className="flex">
-        <div>
-          <AdminLeft />
-        </div>
-        <div className="p-5">
-          <Outlet />
-        </div>
+    <div className="flex min-h-screen bg-gray-100">
+      <AdminLeft />
+      <div className="flex-1 p-8">
+        <Outlet />
       </div>
-    </>
+    </div>
   );
 }
 
