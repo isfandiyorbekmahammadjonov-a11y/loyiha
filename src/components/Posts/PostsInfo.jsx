@@ -1,7 +1,7 @@
 import React from "react";
 import { BiCalendarAlt } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
-import CardsMap from "./CardsMap";
+import CardsMap from "../Cards/CardsMap";
 function PostsInfo() {
   return (
     <div className="container mx-auto px-6">

@@ -1,5 +1,5 @@
 import React from "react";
-import { blogPostsBlogify } from "../data/PostInfo";
+import { blogPostsBlogify } from "../../data/PostInfo";
 import { BiCalendarAlt } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
 function CardsMap() {

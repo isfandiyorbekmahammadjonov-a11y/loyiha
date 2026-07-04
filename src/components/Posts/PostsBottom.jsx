@@ -1,5 +1,5 @@
 import React from "react";
-import CardsMap from "./CardsMap";
+import CardsMap from "../Cards/CardsMap";
 function PostsBottom() {
   return (
     <section className="py-16">

@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MdLogout, MdOutlineDashboard, MdPostAdd } from "react-icons/md";
+import { MdLogout, MdOutlineDashboard } from "react-icons/md";
 import { FaRegFileAlt } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa6";
 function AdminLeft() {
   return (
     <div className="w-[250px] h-screen bg-white border-r border-gray-200 flex flex-col justify-between">
@@ -13,7 +14,7 @@ function AdminLeft() {
         <div className="px-3 pt-5 space-y-1">
           <Link
             to="."
-            className="flex items-center gap-3 h-11 px-4 rounded-lg text-[#111827] hover:bg-gray-50 text-[14px]"
+            className="flex items-center gap-3 h-11 px-4 rounded-lg text-[#111827] hover:bg-[#4346ef]/10 hover:text-[#4346EF] text-[14px]"
           >
             <MdOutlineDashboard className="text-lg" />
             <span>Dashboard</span>
@@ -21,7 +22,7 @@ function AdminLeft() {
 
           <Link
             to="posts"
-            className="flex items-center gap-3 h-11 px-4 rounded-lg text-[#111827] hover:bg-gray-50 text-[14px]"
+            className="flex items-center gap-3 h-11 px-4 rounded-lg text-[#111827] hover:bg-[#4346ef]/10 hover:text-[#4346EF] text-[14px]"
           >
             <FaRegFileAlt className="text-lg" />
             <span>Posts</span>
@@ -29,9 +30,9 @@ function AdminLeft() {
 
           <Link
             to="createPost"
-            className="flex items-center gap-3 h-11 px-4 rounded-lg text-[#111827] hover:bg-gray-50 text-[14px]"
+            className="flex items-center gap-3 h-11 px-4 rounded-lg text-[#111827] hover:bg-[#4346ef]/10 hover:text-[#4346EF] text-[14px]"
           >
-            <MdPostAdd className="text-lg" />
+            <FaPlus className="text-lg" />
             <span>Create Post</span>
           </Link>
         </div>
