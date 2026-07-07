@@ -11,6 +11,7 @@ import AdminCreatePost from "./components/Admin/AdminCreatePost";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ErrorPage from "./pages/public/ErrorPage";
 function App() {
   const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ function App() {
           element: <Posts />,
         },
       ],
+    },
+    {
+      path: "*",
+      element: <ErrorPage />,
     },
     {
       path: "login",
