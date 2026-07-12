@@ -10,17 +10,15 @@ function RecentPostsRow({ post }) {
 
       <td className="py-4">
         <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-indigo-50 text-indigo-600">
-          {post.category}
+          {post.category.name}
         </span>
       </td>
 
-      <td className="py-4 text-sm text-gray-500">{post.date}</td>
+      <td className="py-4 text-sm text-gray-500">{post.created_at}</td>
 
       <td className="py-4">
-        <span
-          className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${statusStyles[post.status]}`}
-        >
-          {post.status}
+        <span className="inline-block px-3 py-1 rounded-full text-xs font-medium ">
+          {post.status ? "publish" : "draft"}
         </span>
       </td>
 

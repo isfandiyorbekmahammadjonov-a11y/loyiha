@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import DashboardStats from "./Dashboard/DashboardStats";
 import RecentPosts from "./Posts/RecentPosts";
 
@@ -11,7 +11,7 @@ function AdminDashboard() {
           Welcome back! Here's an overview of your blog.
         </p>
       </div>
-      <DashboardStats />
+      <DashboardStats />;
       <RecentPosts />
     </div>
   );

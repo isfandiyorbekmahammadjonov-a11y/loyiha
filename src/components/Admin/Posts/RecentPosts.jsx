@@ -1,8 +1,21 @@
 import React from "react";
 import RecentPostsRow from "./RecentPostsRow";
-import { recentPostsData } from "../../../data/recentPostsData";
-
+const apiUrl = import.meta.env.VITE_API_URL;
+import { useEffect } from "react";
+import { useState } from "react";
 function RecentPosts() {
+  let [articles, setArticles] = useState([]);
+  useEffect(() => {
+    async function Table() {
+      let response = await fetch(`${apiUrl}/api/v1/articles/`);
+      if (!response.ok) {
+        throw new Error("Xato");
+      }
+      let data = await response.json();
+      setArticles(data.data.results);
+    }
+    Table();
+  }, []);
   return (
     <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6">
       <div className="mb-5">
@@ -34,7 +47,7 @@ function RecentPosts() {
             </tr>
           </thead>
           <tbody>
-            {recentPostsData.map((post) => (
+            {articles.map((post) => (
               <RecentPostsRow key={post.id} post={post} />
             ))}
           </tbody>
