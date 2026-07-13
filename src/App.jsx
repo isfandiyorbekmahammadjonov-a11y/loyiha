@@ -8,7 +8,7 @@ import AdminLayout from "./layouts/AdminLayout";
 import AdminDashboard from "./components/Admin/AdminDashboard";
 import AdminPosts from "./components/Admin/AdminPosts";
 import AdminCreatePost from "./components/Admin/CreatPosts/AdminCreatePost";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ErrorPage from "./pages/public/ErrorPage";
