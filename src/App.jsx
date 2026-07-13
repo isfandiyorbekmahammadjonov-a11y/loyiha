@@ -12,6 +12,7 @@ import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ErrorPage from "./pages/public/ErrorPage";
+import CardDetail from "./components/DeatailPage/CardDetail";
 function App() {
   const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ function App() {
         {
           path: "posts",
           element: <Posts />,
+        },
+        {
+          path: "/product/:id",
+          element: <CardDetail />,
         },
       ],
     },

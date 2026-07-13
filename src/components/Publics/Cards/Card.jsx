@@ -1,6 +1,7 @@
 import React from "react";
 import { BiCalendarAlt } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 function Card({ item }) {
   return (
     <div className="max-w-[360px] mx-auto bg-white border border-gray-100 rounded-[24px] shadow-sm overflow-hidden font-sans mb-10">
@@ -30,13 +31,14 @@ function Card({ item }) {
           {item.content}
         </p>
 
-        <a
-          href="#"
+        <Link
+          to={`/product/${item.id}`}
+          state={{ item: item }}
           className="inline-flex items-center gap-1.5 text-[#4F46E5] font-semibold text-sm hover:gap-2.5 transition-all"
         >
           <span>Read more</span>
           <FaArrowRightLong />
-        </a>
+        </Link>
       </div>
     </div>
   );
