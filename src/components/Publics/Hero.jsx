@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import hero from "../assets/hero.svg";
+import hero from "../../assets/hero.svg";
 function Hero() {
   return (
     <section className="bg-[#F5F4FF] h-[585px] flex items-center">

@@ -17,7 +17,7 @@ function PostsInfo() {
           View All <FaArrowRightLong />
         </button>
       </div>
-      <CardsMap />
+      <CardsMap limit={3} />
     </div>
   );
 }

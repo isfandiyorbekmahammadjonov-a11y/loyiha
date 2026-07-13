@@ -1,5 +1,5 @@
 import React from "react";
-import { informationsBlogify } from "../../data/Cards";
+import { informationsBlogify } from "../../../data/Cards";
 function Cards() {
   return (
     <div className="container mx-auto px-6">

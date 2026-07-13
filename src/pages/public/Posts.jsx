@@ -1,6 +1,6 @@
 import React from "react";
-import PostsBottom from "../../components/Posts/PostsBottom";
-import PostTop from "../../components/Posts/PostTop";
+import PostsBottom from "../../components/Publics/Posts/PostsBottom";
+import PostTop from "../../components/Publics/Posts/PostTop";
 
 function Posts() {
   return (

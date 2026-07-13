@@ -24,7 +24,6 @@ function PostsBottom() {
       </div>
       <div className="container">
         <CardsMap />
-        <CardsMap />
       </div>
     </section>
   );
