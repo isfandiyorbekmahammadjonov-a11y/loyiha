@@ -21,7 +21,6 @@ function LoginForm() {
         }),
       });
       const data = await response.json();
-      console.log(data);
       localStorage.setItem("access", data.data.access);
       localStorage.setItem("refresh", data.data.refresh);
       navigate("/adminLayout");
