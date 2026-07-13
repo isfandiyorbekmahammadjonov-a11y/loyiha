@@ -1,6 +1,6 @@
 import React from "react";
 import LoginImg from "../../assets/Login.svg";
-import LoginForm from "../../components/LoginForm";
+import LoginForm from "../../components/Login/LoginForm";
 function Login() {
   return (
     <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
