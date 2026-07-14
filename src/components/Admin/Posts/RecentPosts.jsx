@@ -16,9 +16,28 @@ function RecentPosts() {
     }
     Table();
   }, []);
+  async function handleDelet(id) {
+    const token = localStorage.getItem("access");
+    try {
+      let response = await fetch(`${apiUrl}/api/v1/articles/${id}/`, {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      if (response.ok) {
+        setArticles(articles.filter((item) => item.id !== id));
+      } else {
+        throw new Error("Xato");
+      }
+    } catch (error) {
+      console.log("Xato");
+    }
+    9;
+  }
   return (
     <>
-      <RecentPostTable articles={articles} />
+      <RecentPostTable articles={articles} handleDelet={handleDelet} />
     </>
   );
 }

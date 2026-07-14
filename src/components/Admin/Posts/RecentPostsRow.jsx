@@ -3,7 +3,7 @@ const statusStyles = {
   Published: "bg-green-50 text-green-600",
   Draft: "bg-gray-100 text-gray-500",
 };
-function RecentPostsRow({ post }) {
+function RecentPostsRow({ post, handleDelet }) {
   return (
     <tr className="border-b border-gray-100 last:border-0">
       <td className="py-4 text-sm font-medium text-gray-900">{post.title}</td>
@@ -27,7 +27,10 @@ function RecentPostsRow({ post }) {
           <button className="text-sm font-medium text-indigo-600 hover:text-indigo-700">
             Edit
           </button>
-          <button className="text-sm font-medium text-red-500 hover:text-red-600">
+          <button
+            onClick={() => handleDelet(post.id)}
+            className="text-sm font-medium text-red-500 hover:text-red-600 cursor-pointer"
+          >
             Delete
           </button>
         </div>

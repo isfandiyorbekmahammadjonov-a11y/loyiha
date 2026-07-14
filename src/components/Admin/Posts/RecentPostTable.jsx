@@ -1,6 +1,6 @@
 import React from "react";
 import RecentPostsRow from "./RecentPostsRow";
-function RecentPostTable({ articles }) {
+function RecentPostTable({ articles, handleDelet }) {
   return (
     <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6">
       <div className="mb-5">
@@ -33,7 +33,11 @@ function RecentPostTable({ articles }) {
           </thead>
           <tbody>
             {articles.map((post) => (
-              <RecentPostsRow key={post.id} post={post} />
+              <RecentPostsRow
+                key={post.id}
+                post={post}
+                handleDelet={handleDelet}
+              />
             ))}
           </tbody>
         </table>
