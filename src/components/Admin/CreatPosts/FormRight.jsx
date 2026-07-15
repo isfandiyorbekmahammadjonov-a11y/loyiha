@@ -23,8 +23,6 @@ function FormRight() {
               <option value="1">Technology</option>
               <option value="2">Productivity</option>
               <option value="3">Design</option>
-              <option value="4">Business</option>
-              <option value="5">Lifestyle</option>
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400">
               <FiChevronDown className="w-5 h-5" />

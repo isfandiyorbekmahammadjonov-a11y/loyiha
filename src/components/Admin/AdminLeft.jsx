@@ -25,7 +25,7 @@ function AdminLeft() {
             className="flex items-center gap-3 h-11 px-4 rounded-lg text-[#111827] hover:bg-[#4346ef]/10 hover:text-[#4346EF] text-[14px]"
           >
             <FaRegFileAlt className="text-lg" />
-            <span>Posts</span>
+            <span>Update Posts</span>
           </Link>
 
           <Link

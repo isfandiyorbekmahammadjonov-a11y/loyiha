@@ -1,9 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { AdminUpdatePostsContext } from "../../context/AdminUpdatePost";
+import { useContext } from "react";
 const statusStyles = {
   Published: "bg-green-50 text-green-600",
   Draft: "bg-gray-100 text-gray-500",
 };
 function RecentPostsRow({ post, handleDelet }) {
+  const { setPostEdit } = useContext(AdminUpdatePostsContext);
+  const navigate = useNavigate();
+  const handleEdit = () => {
+    setPostEdit(post);
+    navigate("posts");
+  };
   return (
     <tr className="border-b border-gray-100 last:border-0">
       <td className="py-4 text-sm font-medium text-gray-900">{post.title}</td>
@@ -24,7 +33,10 @@ function RecentPostsRow({ post, handleDelet }) {
 
       <td className="py-4 text-right">
         <div className="flex items-center justify-end gap-4">
-          <button className="text-sm font-medium text-indigo-600 hover:text-indigo-700">
+          <button
+            onClick={handleEdit}
+            className="text-sm font-medium text-indigo-600 hover:text-indigo-700"
+          >
             Edit
           </button>
           <button
