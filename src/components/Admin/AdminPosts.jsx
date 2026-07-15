@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { AdminUpdatePostsContext } from "../context/AdminUpdatePost";
-
 function AdminPosts() {
   let { title, content, category, img, clear, Post } = useContext(
     AdminUpdatePostsContext,
@@ -85,7 +84,6 @@ function AdminPosts() {
                   className="hidden"
                 />
                 <div className="text-center flex flex-col items-center">
-                  {/* Cloud Yuklash Ikonkasi */}
                   <svg
                     className="w-10 h-10 text-indigo-500 mb-3"
                     fill="none"
@@ -108,8 +106,6 @@ function AdminPosts() {
                 </div>
               </label>
             </div>
-
-            {/* Tugmalar */}
             <div className="flex gap-4 justify-end mt-2">
               <button
                 type="button"
