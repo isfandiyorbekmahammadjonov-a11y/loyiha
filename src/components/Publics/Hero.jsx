@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import hero from "../../assets/hero.svg";
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className="bg-[#F5F4FF] h-[585px] flex items-center">
@@ -17,13 +18,19 @@ function Hero() {
               and inspire others with your unique perspective.
             </p>
             <div className="md:flex gap-4 mt-6">
-              <button className="flex items-center justify-center w-[193px] h-[48px] gap-2 bg-gradient-to-r from-[#4346EF] to-[#8524E5] text-white px-6 py-3 rounded-lg">
+              <Link
+                to={"posts"}
+                className="flex items-center justify-center w-[193px] h-[48px] gap-2 bg-gradient-to-r from-[#4346EF] to-[#8524E5] text-white px-6 py-3 rounded-lg"
+              >
                 Explore Posts
                 <FaArrowRight size={12} />
-              </button>
-              <button className="px-6 py-3 w-[157px] h-[48px] rounded-lg border border-gray-300 bg-white">
+              </Link>
+              <Link
+                to={"login"}
+                className="px-6 py-3 w-[157px] h-[48px] rounded-lg border border-gray-300 bg-white"
+              >
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center">

@@ -2,6 +2,7 @@ import React from "react";
 import { BiCalendarAlt } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import CardsMap from "../Cards/CardsMap";
+import { Link } from "react-router-dom";
 function PostsInfo() {
   return (
     <div className="container mx-auto px-6">
@@ -13,9 +14,12 @@ function PostsInfo() {
           </p>
         </div>
 
-        <button className="flex justify-center items-center border-2 border-[#E5E7EB] rounded-2xl w-[130px] h-[44px]">
+        <Link
+          to={"posts"}
+          className="flex justify-center items-center border-2 border-[#E5E7EB] rounded-2xl w-[130px] h-[44px]"
+        >
           View All <FaArrowRightLong />
-        </button>
+        </Link>
       </div>
       <CardsMap limit={3} />
     </div>
